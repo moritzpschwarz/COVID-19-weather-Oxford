@@ -1,7 +1,7 @@
 # 2019-nCovid-weather-Oxford
-Github Repository for Cohen et al study on "The Influence of Weather Conditions on 2019-nCovid using Geospatial Data", submitted to The Lancet
+Github Repository for Cohen et al study on "The Influence of Weather Conditions on COVID-19 using Geospatial Data", submitted to The Lancet
 
-The Influence of Weather Conditions on 2019-nCovid using Geospatial Data
+The Influence of Weather Conditions on COVID-19 using Geospatial Data
 
 Research by Francois Cohen, Sihan Li, Yangsiyu Lu and Moritz Schwarz
 
