@@ -82,8 +82,8 @@ ggplot(data=world %>% filter(month == 6),aes(fill=Effect)) +
   geom_sf()+
   
   coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") + 
-  scale_x_continuous(breaks = c(-180,-90,0,90,180),labels = function(x){paste0(x,"°")}) + 
-  scale_y_continuous(breaks = c(-45,0,45),labels = function(x){paste0(x,"°")})+
+  scale_x_continuous(breaks = c(-180,-90,0,90,180),labels = function(x){paste0(x,"Â°")}) + 
+  scale_y_continuous(breaks = c(-45,0,45),labels = function(x){paste0(x,"Â°")})+
   
   labs(title = "June Weather Effect",
        subtitle = "Percentage Point effects on daily growth rates of confirmed COVID-19 cases.")+
@@ -107,12 +107,12 @@ ggplot(data=world %>% filter(month == 6),aes(fill=Effect)) +
   
   
   
-ggplot(data=world %>% filter(month == 12),aes(fill=Effect)) +
+ggplot(data=world %>% filter(month == 10),aes(fill=Effect)) +
   geom_sf()+
   
   coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") + 
-  scale_x_continuous(breaks = c(-180,-90,0,90,180),labels = function(x){paste0(x,"°")}) + 
-  scale_y_continuous(breaks = c(-50,0,50),labels = function(x){paste0(x,"°")})+
+  scale_x_continuous(breaks = c(-180,-90,0,90,180),labels = function(x){paste0(x,"Â°")}) + 
+  scale_y_continuous(breaks = c(-50,0,50),labels = function(x){paste0(x,"Â°")})+
   
   labs(title = "October Weather Effect",
        subtitle = "Percentage Point effects on daily growth rates of confirmed COVID-19 cases.")+
