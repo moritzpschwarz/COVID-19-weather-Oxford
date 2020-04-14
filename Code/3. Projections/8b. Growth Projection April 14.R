@@ -107,7 +107,7 @@ ggplot(data=world %>% filter(month == 6),aes(fill=Effect)) +
   
   
   
-ggplot(data=world %>% filter(month == 10),aes(fill=Effect)) +
+ggplot(data=world %>% filter(month == 12),aes(fill=Effect)) +
   geom_sf()+
   
   coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") + 
