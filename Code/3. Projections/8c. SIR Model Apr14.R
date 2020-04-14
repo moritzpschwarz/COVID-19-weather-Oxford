@@ -265,3 +265,17 @@ for(j in 1:length(model_assumptions$R0_input)){
   ggsave(plot,filename = paste0("C:/Users/morit/OneDrive - Nexus365/Covid-19 Paper/Figures/Level Projections_R0",model_assumptions$R0_input[j],"_Apr14.pdf"),device = cairo_pdf,height = 8,width = 10)
   ggsave(plot,filename = paste0("C:/Users/morit/OneDrive - Nexus365/Covid-19 Paper/Figures/Level Projections_R0",model_assumptions$R0_input[j],"_Apr14.jpg"),height = 8,width = 10)
 }
+ 
+# 
+# climate_projection_df %>% filter(Country == "Australia",
+#                                  R0_input == 3,
+#                                  type == "Social distancing whole population") %>% 
+#   select(t,growth,combined_growth,Effect) %>% 
+#   gather(variable,value,-t) %>% 
+#   ggplot(aes(x = t, y =value, group=variable,color=variable)) + 
+#   geom_line() + 
+#   scale_y_continuous(labels = scales::percent_format(accuracy = 1))+
+#   geom_hline(aes(yintercept = 1))+
+#   scale_color_discrete(labels = c("Combined Effect","SIR no Weather Effect","Weather Effect"),name="")+
+#   labs(title = "New Version - Linearized Coef: 0.01",y="Growth",
+#        subtitle = "Australia, R0=3.4, Social Distancing Whole Population\nMeasures in place t=30-90") + theme_bw()
