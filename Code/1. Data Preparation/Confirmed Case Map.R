@@ -19,11 +19,11 @@ df %>%
 
 #st_as_sf(coords = c("long","lat")) 
 
-# st_as_sf(rnaturalearthdata::countries50) %>% 
-#   filter(!NAME_EN == "Antarctica") -> world 
+st_as_sf(rnaturalearthdata::countries110) %>% 
+  filter(!name == "Antarctica") -> world 
 
 
-world <- map_data("world") %>% filter(!region == "Antarctica")
+#world <- map_data("world") %>% filter(!region == "Antarctica")
 
 # ggplot() +
 #   geom_polygon(data = world, aes(x=long, y = lat, group = group), fill="grey", alpha=0.3) +
@@ -110,22 +110,37 @@ ggplot() +
   #geom_point(aes(x=long, y=lat, size=cases, color=cases), shape=20, stroke=FALSE) +
   scale_size_continuous(range = c(1,10),name="Number of Cases",guide = FALSE) +
   #scale_alpha_continuous(name="Number of Cases",guide = FALSE) +
-  scale_color_viridis(option="magma", name="Number of Cases") +
+  
+  
+  scale_color_gradient(low = rgb(red = 64,0,64,maxColorValue = 255),
+                       high = rgb(255,0,0,maxColorValue = 255),name = "Number of COVID-19 Cases")+
+
+  
+  #scale_color_gradient(high = rgb(red = 64,0,64,maxColorValue = 255),low = rgb(0,128,0,maxColorValue = 255))
+  
+  #scale_color_viridis(option="magma", name="Number of Cases") +
   #theme_void() +
   #coord_sf(crs = "+proj=robin +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs") + 
   #coord_sf(crs = "+proj=robin") + 
   scale_x_continuous(breaks = c(-180,-90,0,90,180),labels = function(x){paste0(x,"°")}) + 
-  scale_y_continuous(breaks = c(-50,0,50),labels = function(x){paste0(x,"°")})+
+  scale_y_continuous(breaks = c(-45,0,45),labels = function(x){paste0(x,"°")})+
   #coord_quickmap() + 
   
-  labs(title = "Confirmed COVID-19 Cases",
+  
+  labs(title = "",
        x = "",
        y="",
-       caption = "Data retrieved from Xu et al. (2020) on April 9th, 2020.\nCases reported at the national level excluded.") +
+       caption = "") +
+  
+  
+  # labs(title = "Confirmed COVID-19 Cases",
+  #      x = "",
+  #      y="",
+  #      caption = "Data retrieved from Xu et al. (2020) on April 9th, 2020.\nCases reported at the national level excluded.") +
   
   theme(
     legend.position = "bottom",
-    panel.grid.major = element_line(linetype = 2,color = "lightgrey",size=0.1),
+    panel.grid.major = element_line(linetype = 2,color = "lightgrey",size=0.5),
     panel.background = element_blank(),
     legend.key.height = unit(0.5,"cm"),
     legend.key.width = unit(2,"cm"),
@@ -137,5 +152,5 @@ ggplot() +
   ) -> plot
 
 
-ggsave(plot,filename = "C:/Users/morit/OneDrive - Nexus365/Covid-19 Paper/Figures/confirmed_cases_map.pdf",height = 6,width=12,device = cairo_pdf)
-ggsave(plot,filename = "C:/Users/morit/OneDrive - Nexus365/Covid-19 Paper/Figures/confirmed_cases_map.jpg",height = 6,width=12,dpi = 600)
+ggsave(plot,filename = "C:/Users/morit/OneDrive - Nexus365/Covid-19 Paper/Figures/confirmed_cases_map.pdf",height = 6,width=10,device = cairo_pdf)
+ggsave(plot,filename = "C:/Users/morit/OneDrive - Nexus365/Covid-19 Paper/Figures/confirmed_cases_map.jpg",height = 6,width=10,dpi = 600)
