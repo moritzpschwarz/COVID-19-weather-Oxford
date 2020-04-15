@@ -1,4 +1,4 @@
-# 2019-nCovid-weather-Oxford
+# COVID-19 and the weather Oxford
 Github Repository for Cohen et al study on "The Influence of Weather Conditions on COVID-19 using Geospatial Data", submitted to The Lancet
 
 The Influence of Weather Conditions on COVID-19 using Geospatial Data
