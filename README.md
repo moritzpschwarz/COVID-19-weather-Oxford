@@ -1,6 +1,6 @@
-# Novel Use of Georeferenced Data to Understand the Weather-Sensitiveness of Pathogens: The Case of COVID-19
-Github Repository for Cohen et al study on "Novel Use of Georeferenced Data to Understand the Weather-Sensitiveness of Pathogens: The Case of COVID-19"
+# The Challenge of Using Epidemiological Case Count Data: The Example of Confirmed COVID-19 Cases and the Weather
+Github Repository for Cohen et al study on "The Challenge of Using Epidemiological Case Count Data: The Example of Confirmed COVID-19 Cases and the Weather"
 
-Research by Francois Cohen, Anant Jani, Sihan Li, Yangsiyu Lu and Moritz Schwarz
+Research by Francois Cohen, Moritz Schwarz, Sihan Li, Yangsiyu Lu and Anant Jani
 
-This version: 15th April 2020; first version: 1st April 2020; data update: April 8th, 2020.
+This version: May 10^{th}, 2020; first version: April 1^{st}, 2020; data update: April 30^{th}, 2020.
