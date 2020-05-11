@@ -1,6 +1,10 @@
 clear all
 set more off
 
+* Make sure to have lincomest installed
+ssc install lincomest
+ssc install estout
+
 cd "PUT PAHT" 
 global raw "PUT PAHT/data/raw" 
 global temp "PUT PAHT/data/temp" 
