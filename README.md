@@ -13,5 +13,5 @@ The publicly available data on COVID-19 cases provides an opportunity to better 
 ## Replication Directions
 
 1. Download the estimation data [here](https://unioxfordnexus-my.sharepoint.com/:u:/g/personal/spet4251_ox_ac_uk/EQc-DqwPJQBAnEeQEtf_L24BaCyHi-Vhin-CuuvdfYTvYA?e=y5yXMS). 
-2. Ensure that the data file is called "ESTIMATION_30042020.dta" and lies in the folder Data/raw. 
+2. Ensure that the data file is called ```ESTIMATION_30042020.dta``` and lies in the folder Data/raw. 
 3. Open and run the code file ```Replicate Results.do```.
