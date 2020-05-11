@@ -1,23 +1,21 @@
 clear all
 set more off
 
-
 cd "PUT PAHT" 
-global temp "PUT PAHT/temp" 
-global raw "PUT PAHT/Data" 
-global use "PUT PAHT/use"
-global out "PUT PAHT/out"
-
+global raw "PUT PAHT/data/raw" 
+global temp "PUT PAHT/data/temp" 
+global use "PUT PAHT/data/use"
+global out "PUT PAHT/data/out"
 
 
 ********************************************************************************
 *************************	Preparation  ***************************************
 ********************************************************************************
 
-*Data input: this do file starts from ESTIMATION_DDMMYY.dta, which already merged COVID and CLIMATE data.
-*use "$raw/ESTIMATION_300320.dta",clear 
+*Data input: this do file starts from ESTIMATION_DDMMYYYY.dta, which already merged COVID and CLIMATE data.
+*use "$raw/ESTIMATION_30032020.dta",clear 
 
-use "$raw/ESTIMATION_300420.dta",clear 
+use "$raw/ESTIMATION_30042020.dta",clear 
 set more off
 
 
