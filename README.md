@@ -17,7 +17,7 @@ The publicly available data on COVID-19 cases provides an opportunity to better 
 3. Open and run the code file ```Replicate Results.do```. This should create all tables and figures used in our manuscript. 
 
 ## Questions and Comments
-Should you have any questions or comments on the manuscript, please contact the corresponding author [Dr Francois Cohen](mailto:francois.cohen@smithschool.ox.ac.uk). 
+Should you have any questions or comments regarding the manuscript, please contact the corresponding author [Dr Francois Cohen](mailto:francois.cohen@smithschool.ox.ac.uk). 
 
 For any technical questions regarding this GitHub Repository, please contact [Moritz Schwarz](mailto:moritz.schwrz@ouce.ox.ac.uk)
 
