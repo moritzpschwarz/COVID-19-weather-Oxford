@@ -905,7 +905,7 @@ label variable n "No. days before confirmation (Av. Temperature)";
 twoway  (scatter coeff_AV n, mcolor(forest_green) msymbol(diamond)) (rarea se_AV_minus se_AV_plus n if n<=16, sort fcolor(forest_green%40) lcolor(forest_green%40) lwidth(vvvthin) cmissing(n)) (line coeff_AV n, sort lcolor(forest_green) lwidth(medium) lpattern(longdash))
 , ytitle("Difference in logarithm of total cases", size(large)) yline(0, lcolor(black)) ylabel(, glcolor(gs5%25) glpattern(dash) labsize(large)) xtitle(, color(none) size(large)) xlabel(0(3)15, valuelabel labsize(large)) legend(off) graphregion(fcolor(white) lcolor(white));
 graph export "$out/Figure_dynamics.png", replace;
-
+#delimit cr
 
 
 
@@ -974,7 +974,7 @@ label variable n "No. days before confirmation (Min. Temperature)";
 twoway  (scatter coeff_AV n, mcolor(edkblue) msymbol(diamond)) (rarea se_AV_minus se_AV_plus n if n<=15, sort fcolor(edkblue%40) lcolor(edkblue%40) lwidth(vvvthin) cmissing(n)) (line coeff_AV n, sort lcolor(edkblue) lwidth(medium) lpattern(longdash))
 , ytitle("Difference in logarithm of total cases", size(large)) yline(0, lcolor(black)) ylabel(, glcolor(gs5%25) glpattern(dash) labsize(large)) xtitle(, color(none) size(large)) xlabel(0(3)15, valuelabel labsize(large)) legend(off) graphregion(fcolor(white) lcolor(white));
 graph export "$out/Figure_dynamics_MIN.png", replace;
-
+#delimit cr
 
 
 ** TMAX
